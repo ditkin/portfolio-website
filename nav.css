@@ -1,0 +1,11 @@
+.menu-button {
+  font-family: G, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.5s ease;
+}
+
+.menu-button:hover {
+  color: white;
+  cursor: pointer;
+}
