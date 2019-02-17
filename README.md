@@ -1,5 +1,5 @@
 ## How to develop
-`npm install -g yarn`
-`yarn install`
-`yarn dev`
-`open dist/index.html`
+1. `npm install -g yarn`
+2. `yarn install`
+3. `yarn dev`
+4. `open dist/index.html`
