@@ -23,17 +23,26 @@ body
 #kitty
   width: 50px;
 
+section
+  min-height: 500px;
+  position: relative;
+  display: flex;
+
 #hero
   background: #83a4d4;
   background-image: url(../assets/dot.svg), linear-gradient(to right, #b6fbff, #83a4d4);
   background-position: center;
   background-size: 3px, cover, cover;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  min-height: 500px;
-  position: relative;
 
+  .menu-button
+    font-size: 20px;
+    font-weight: 500;
+    transition: color 0.5s ease;
+
+    &:hover
+      color: white;
+      cursor: pointer;
+
+#about
+  background: white;

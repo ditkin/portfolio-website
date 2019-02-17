@@ -1,137 +1,38 @@
-/* WebKit and Opera browsers */
-@-webkit-keyframes spinner
-  from
-    -webkit-transform: rotateY(0deg);
-  
-  to
-    -webkit-transform: rotateY(-360deg);
-  
-
-
 /* all other browsers */
 @keyframes spinner
   from
-    -moz-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
     transform: rotateY(0deg);
   
   to
-    -moz-transform: rotateY(-360deg);
-    -ms-transform: rotateY(-360deg);
     transform: rotateY(-360deg);
-  
-
-
-/* WebKit and Opera browsers */
-@-webkit-keyframes reverse_spinner
-  from
-    -webkit-transform: rotateY(0deg);
-  
-  to
-    -webkit-transform: rotateY(360deg);
-  
-
 
 /* all other browsers */
 @keyframes reverse_spinner
   from
-    -moz-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
     transform: rotateY(0deg);
   
   to
-    -moz-transform: rotateY(360deg);
-    -ms-transform: rotateY(360deg);
     transform: rotateY(360deg);
-  
-
 
 .stage
   margin: 1em auto;
-  -webkit-perspective: 1200px;
-  -moz-perspective: 1200px;
-  -ms-perspective: 1200px;
   perspective: 1200px;
 
-
 .spinner
-  -webkit-animation-name: spinner;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 6s;
-
   animation-name: spinner;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-duration: 6s;
-
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
 
-
-/*  .spinner:hover
-        -webkit-animation-play-state: paused;
-        animation-play-state: paused;
-      */
-
 .reverse_spinner
-  -webkit-animation-name: reverse_spinner;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 6s;
-
   animation-name: reverse_spinner;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-duration: 6s;
 
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
-
 
 .thick
   font-weight: 900;
   font-size: 30px;
-
-
-/*  .reverse_spinner:hover
-          -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-        */
-
-/*body
-        background-color: hsl(34, 53%, 82%);
-      background-image: repeating-linear-gradient(45deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
-        hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
-        hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
-        hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
-        hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
-        hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 120px, hsla(197, 62%, 11%, 0.5) 120px, hsla(197, 62%, 11%, 0.5) 140px
-        ), repeating-linear-gradient(135deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
-        hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
-        hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
-        hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
-        hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
-        hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 140px, hsla(197, 62%, 11%, 0.5) 140px, hsla(197, 62%, 11%, 0.5) 160px
-      );
-      */
-/*body
-        background-color: #6d695c;
-      background-image:
-      repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
-      repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
-      linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
-      linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
-      background-size: 70px 120px;
-      */
-/*body
-        background-color: #fff;
-      background-image:
-      linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
-      linear-gradient(#eee .1em, transparent .1em);
-      background-size: 100% 1.2em;
-      */

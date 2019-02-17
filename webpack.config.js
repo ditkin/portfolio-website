@@ -1,9 +1,9 @@
-// webpack v4
+const webpack = require('webpack');
 const path = require('path');
-// update from 23.12.2018
 const nodeExternals = require('webpack-node-externals');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
   entry: { main: './src/index.js' },
@@ -11,8 +11,8 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[chunkhash].js',
   },
-  target: 'node', // update from 23.12.2018
-  externals: [nodeExternals()], // update from 23.12.2018
+  target: 'node',
+  externals: [nodeExternals()],
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'main.[contenthash].css',
@@ -22,6 +22,11 @@ module.exports = {
       hash: true,
       template: './src/index.html',
       filename: 'index.html',
+    }),
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        postcss: [autoprefixer()],
+      },
     }),
   ],
   module: {
@@ -39,6 +44,7 @@ module.exports = {
           'style-loader',
           MiniCssExtractPlugin.loader,
           'css-loader',
+          'postcss-loader',
           'sass-loader',
         ],
       },
