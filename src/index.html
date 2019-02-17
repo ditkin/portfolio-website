@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+	</head>
+	<body>
+    <section id="hero">
+    <!-- <div id="main-column" class="width-650 mx-auto"> -->
+      <div id="nav" class="w-100 py-2 px-2 height-75 d-flex align-items-center justify-content-between">
+        <img id="kitty" class="float-left height-50" src=<%=require("./assets/funny_kitty.jpeg")%>>
+        <div class="float-right d-flex width-200 justify-content-around">
+          <span class="about menu-button">ABOUT</span>
+          <span class="resume menu-button">RESUME</span>
+        </div>
+      <!-- </div> -->
+    </section>
+      
+        <div id="stage" class="dotted-overlay">
+          <div class="friday">
+            <h1 class="reverse_spinner">Hi world</h1>
+            <p class="thick spinner">THis my boy david he a baller</p>
+            <img class="spinner" src=<%=require("./assets/hubspot_pic.png")%> alt="tha boy"> 
+          </div>
+        </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</html>
