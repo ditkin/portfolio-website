@@ -8,7 +8,7 @@ const autoprefixer = require('autoprefixer');
 module.exports = {
   entry: { main: './src/index.js' },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
     filename: '[name].[chunkhash].js',
   },
   target: 'node',
