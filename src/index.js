@@ -7,3 +7,12 @@ document.querySelector('.about').addEventListener('click', () => {
     behavior: 'smooth',
   });
 });
+
+var header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset >= innerHeight) {
+    header.classList.add('sticky');
+  } else {
+    header.classList.remove('sticky');
+  }
+});

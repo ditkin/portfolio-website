@@ -3,7 +3,11 @@ img
   border-radius: 20%;
   box-shadow: 5px 5px 10px 5px;
 
+html
+  height: 100%;
+
 body
+  height: 100%;
   font: bold 21px 'Oswald', sans-serif;
   text-shadow: 1px 1px 0 #fff, 2px 2px 0 #999;
   background-size: 70px 120px;
@@ -29,6 +33,7 @@ section
   display: flex;
 
 #hero
+  height: 100%
   background: #83a4d4;
   background-image: url(../assets/dot.svg), linear-gradient(to right, #b6fbff, #83a4d4);
   background-position: center;
@@ -45,4 +50,11 @@ section
       cursor: pointer;
 
 #about
+  height: 100%;
   background: white;
+
+#header
+  &.sticky
+    position: fixed;
+    top: 0;
+    z-index: 100;
