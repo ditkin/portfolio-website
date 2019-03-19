@@ -32,6 +32,15 @@ section
   position: relative;
   display: flex;
 
+.menu-button
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.5s ease;
+
+  &:hover
+    color: white;
+    cursor: pointer;
+
 #hero
   height: 100%
   background: #83a4d4;
@@ -40,21 +49,16 @@ section
   background-size: 3px, cover, cover;
   flex-direction: column;
 
-  .menu-button
-    font-size: 20px;
-    font-weight: 500;
-    transition: color 0.5s ease;
-
-    &:hover
-      color: white;
-      cursor: pointer;
 
 #about
   height: 100%;
   background: white;
 
-#header
+#low-header
+  position: fixed;
+  top: -200px;
+  z-index: 100;
+  transition: .4s;
+
   &.sticky
-    position: fixed;
     top: 0;
-    z-index: 100;

@@ -8,7 +8,7 @@ document.querySelector('.about').addEventListener('click', () => {
   });
 });
 
-var header = document.getElementById('header');
+var header = document.getElementById('low-header');
 window.addEventListener('scroll', () => {
   if (window.pageYOffset >= innerHeight) {
     header.classList.add('sticky');

@@ -6,8 +6,18 @@
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
 	</head>
 	<body>
+    <nav id="low-header" class="w-100 py-2 px-2 height-75 d-flex align-items-center justify-content-between">
+      <div class="float-left d-flex width-200 justify-content-around align-items-center">
+        <img id="kitty" class="height-50" src=<%=require("./assets/funny_kitty.jpeg")%>>
+        <span>DAVID ITKIN</span>
+      </div>
+      <div class="float-right d-flex width-200 justify-content-around">
+        <span class="about menu-button">ABOUT</span>
+        <span class="resume menu-button">RESUME</span>
+      </div>
+    </nav>
     <section id="hero">
-      <nav id="header" class="w-100 py-2 px-2 height-75 d-flex align-items-center justify-content-between">
+      <nav class="w-100 py-2 px-2 height-75 d-flex align-items-center justify-content-between">
         <div class="float-left d-flex width-200 justify-content-around align-items-center">
           <img id="kitty" class="height-50" src=<%=require("./assets/funny_kitty.jpeg")%>>
           <span>DAVID ITKIN</span>

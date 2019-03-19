@@ -1,0 +1,163 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+img {
+  border-radius: 20%;
+  -webkit-box-shadow: 5px 5px 10px 5px;
+          box-shadow: 5px 5px 10px 5px; }
+
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  font: bold 21px 'Oswald', sans-serif;
+  text-shadow: 1px 1px 0 #fff, 2px 2px 0 #999;
+  -webkit-background-size: 70px 120px;
+          background-size: 70px 120px; }
+
+.height-75 {
+  height: 75px; }
+
+.height-50 {
+  height: 50px; }
+
+.width-650 {
+  width: 650px; }
+
+.width-200 {
+  width: 200px; }
+
+#kitty {
+  width: 50px; }
+
+section {
+  min-height: 500px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+#hero {
+  height: 100%;
+  background: #83a4d4;
+  background-image: url(d43bd3b3942ee0ef49e4a2edb2e17ea4.svg), -webkit-gradient(linear, left top, right top, from(#b6fbff), to(#83a4d4));
+  background-image: url(d43bd3b3942ee0ef49e4a2edb2e17ea4.svg), -webkit-linear-gradient(left, #b6fbff, #83a4d4);
+  background-image: url(d43bd3b3942ee0ef49e4a2edb2e17ea4.svg), -o-linear-gradient(left, #b6fbff, #83a4d4);
+  background-image: url(d43bd3b3942ee0ef49e4a2edb2e17ea4.svg), linear-gradient(to right, #b6fbff, #83a4d4);
+  background-position: center;
+  -webkit-background-size: 3px, cover, cover;
+          background-size: 3px, cover, cover;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  #hero .menu-button {
+    font-size: 20px;
+    font-weight: 500;
+    -webkit-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    transition: color 0.5s ease; }
+    #hero .menu-button:hover {
+      color: white;
+      cursor: pointer; }
+
+#about {
+  height: 100%;
+  background: white; }
+
+#low-header {
+  position: fixed;
+  top: -200px;
+  z-index: 100;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s; }
+  #low-header.sticky {
+    top: 0; }
+
+@-webkit-keyframes spinner {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg); }
+  to {
+    -webkit-transform: rotateY(-360deg);
+            transform: rotateY(-360deg); } }
+
+@-o-keyframes spinner {
+  from {
+    transform: rotateY(0deg); }
+  to {
+    transform: rotateY(-360deg); } }
+
+@keyframes spinner {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg); }
+  to {
+    -webkit-transform: rotateY(-360deg);
+            transform: rotateY(-360deg); } }
+
+@-webkit-keyframes reverse_spinner {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg); }
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg); } }
+
+@-o-keyframes reverse_spinner {
+  from {
+    transform: rotateY(0deg); }
+  to {
+    transform: rotateY(360deg); } }
+
+@keyframes reverse_spinner {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg); }
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg); } }
+
+.stage {
+  margin: 1em auto;
+  -webkit-perspective: 1200px;
+          perspective: 1200px; }
+
+.spinner {
+  -webkit-animation-name: spinner;
+       -o-animation-name: spinner;
+          animation-name: spinner;
+  -webkit-animation-timing-function: linear;
+       -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 6s;
+       -o-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d; }
+
+.reverse_spinner {
+  -webkit-animation-name: reverse_spinner;
+       -o-animation-name: reverse_spinner;
+          animation-name: reverse_spinner;
+  -webkit-animation-timing-function: linear;
+       -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 6s;
+       -o-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d; }
+
+.thick {
+  font-weight: 900;
+  font-size: 30px; }
+
