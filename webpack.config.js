@@ -9,17 +9,16 @@ module.exports = {
   entry: { main: './src/index.js' },
   output: {
     path: path.resolve(__dirname, 'docs'),
-    filename: '[name].[chunkhash].js',
+    filename: '[name].js',
   },
   target: 'node',
   externals: [nodeExternals()],
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'main.[contenthash].css',
+      filename: 'main.css',
     }),
     new HtmlWebpackPlugin({
       inject: false,
-      hash: true,
       template: './src/index.html',
       filename: 'index.html',
     }),

@@ -127,7 +127,7 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! ./sass/main.sass */ \"./src/sass/main.sass\");\n\ndocument.querySelector('.about').addEventListener('click', function () {\n  window.scroll({\n    top: 800,\n    left: 0,\n    behavior: 'smooth'\n  });\n}); // When the user scrolls the page, execute myFunction\n\nwindow.onscroll = function () {\n  myFunction();\n}; // Get the header\n\n\nvar header = document.getElementById('myHeader'); // Get the offset position of the navbar\n\nvar sticky = header.offsetTop; // Add the sticky class to the header when you reach its scroll position. Remove \"sticky\" when you leave the scroll position\n\nfunction myFunction() {\n  if (window.pageYOffset > sticky) {\n    header.classList.add('sticky');\n  } else {\n    header.classList.remove('sticky');\n  }\n}\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("\n\n__webpack_require__(/*! ./sass/main.sass */ \"./src/sass/main.sass\");\n\nvar scrollToAbout = function scrollToAbout() {\n  return window.scroll({\n    top: 800,\n    left: 0,\n    behavior: 'smooth'\n  });\n};\n\ndocument.querySelector('#low-header .about').addEventListener('click', scrollToAbout);\ndocument.querySelector('#hero .about').addEventListener('click', scrollToAbout);\nvar header = document.getElementById('low-header');\nwindow.addEventListener('scroll', function () {\n  if (window.pageYOffset >= innerHeight) {\n    header.classList.add('sticky');\n  } else {\n    header.classList.remove('sticky');\n  }\n});\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

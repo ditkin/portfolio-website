@@ -1,12 +1,16 @@
 import './sass/main.sass';
 
-document.querySelector('.about').addEventListener('click', () => {
+const scrollToAbout = () =>
   window.scroll({
     top: 800,
     left: 0,
     behavior: 'smooth',
   });
-});
+
+document
+  .querySelector('#low-header .about')
+  .addEventListener('click', scrollToAbout);
+document.querySelector('#hero .about').addEventListener('click', scrollToAbout);
 
 var header = document.getElementById('low-header');
 window.addEventListener('scroll', () => {

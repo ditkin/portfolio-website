@@ -37,6 +37,16 @@ section {
   display: -ms-flexbox;
   display: flex; }
 
+.menu-button {
+  font-size: 20px;
+  font-weight: 500;
+  -webkit-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease; }
+  .menu-button:hover {
+    color: white;
+    cursor: pointer; }
+
 #hero {
   height: 100%;
   background: #83a4d4;
@@ -52,24 +62,20 @@ section {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column; }
-  #hero .menu-button {
-    font-size: 20px;
-    font-weight: 500;
-    -webkit-transition: color 0.5s ease;
-    -o-transition: color 0.5s ease;
-    transition: color 0.5s ease; }
-    #hero .menu-button:hover {
-      color: white;
-      cursor: pointer; }
 
 #about {
   height: 100%;
   background: white; }
 
-#header .sticky {
+#low-header {
   position: fixed;
-  top: 0;
-  width: 100%; }
+  top: -200px;
+  z-index: 100;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s; }
+  #low-header.sticky {
+    top: 0; }
 
 @-webkit-keyframes spinner {
   from {
