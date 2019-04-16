@@ -81,6 +81,13 @@ section {
   #low-header.sticky {
     top: 0; }
 
+.stage {
+  margin: auto;
+  width: 75%; }
+
+.push-below-header {
+  margin-top: 100px; }
+
 @-webkit-keyframes spinner {
   from {
     -webkit-transform: rotateY(0deg);
