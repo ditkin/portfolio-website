@@ -1,7 +1,15 @@
+import smoothscroll from 'smoothscroll-polyfill';
 import './sass/main.sass';
 
+const isChrome = navigator.userAgent.indexOf('Chrome') > -1;
+const isSafari = navigator.userAgent.indexOf('Safari') > -1;
+
+if (isSafari && !isChrome) {
+  smoothscroll.polyfill();
+}
+
 const scrollToAbout = () =>
-  window.scroll({
+  window.scrollTo({
     top: 800,
     left: 0,
     behavior: 'smooth',

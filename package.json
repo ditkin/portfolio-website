@@ -36,5 +36,8 @@
     "iOS >= 6",
     "Opera >= 12",
     "Safari >= 6"
-  ]
+  ],
+  "dependencies": {
+    "smoothscroll-polyfill": "^0.4.4"
+  }
 }
