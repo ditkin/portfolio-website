@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald);
-img {
+#kitty {
   border-radius: 20%;
   -webkit-box-shadow: 5px 5px 10px 5px;
           box-shadow: 5px 5px 10px 5px; }
@@ -87,6 +87,15 @@ section {
 
 .push-below-header {
   margin-top: 100px; }
+
+#warrior-soul-pic {
+  height: 250px;
+  width: 400px; }
+  #warrior-soul-pic:hover {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+         -o-transform: scale(1.2);
+            transform: scale(1.2); }
 
 @-webkit-keyframes spinner {
   from {
