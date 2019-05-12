@@ -53,11 +53,11 @@ section {
 
 #hero {
   height: 100%;
-  background: #83a4d4;
-  background-image: url(d43bd3b3942ee0ef49e4a2edb2e17ea4.svg), -webkit-gradient(linear, left top, right top, from(#b6fbff), to(#83a4d4));
-  background-image: url(d43bd3b3942ee0ef49e4a2edb2e17ea4.svg), -webkit-linear-gradient(left, #b6fbff, #83a4d4);
-  background-image: url(d43bd3b3942ee0ef49e4a2edb2e17ea4.svg), -o-linear-gradient(left, #b6fbff, #83a4d4);
-  background-image: url(d43bd3b3942ee0ef49e4a2edb2e17ea4.svg), linear-gradient(to right, #b6fbff, #83a4d4);
+  background: #f1d800;
+  background-image: url(d43bd3b3942ee0ef49e4a2edb2e17ea4.svg), -webkit-gradient(linear, left top, right top, from(rgba(241, 216, 0, 0.111082)), to(#aeb917));
+  background-image: url(d43bd3b3942ee0ef49e4a2edb2e17ea4.svg), -webkit-linear-gradient(left, rgba(241, 216, 0, 0.111082) 0%, #aeb917 100%);
+  background-image: url(d43bd3b3942ee0ef49e4a2edb2e17ea4.svg), -o-linear-gradient(left, rgba(241, 216, 0, 0.111082) 0%, #aeb917 100%);
+  background-image: url(d43bd3b3942ee0ef49e4a2edb2e17ea4.svg), linear-gradient(90deg, rgba(241, 216, 0, 0.111082) 0%, #aeb917 100%);
   background-position: center;
   -webkit-background-size: 3px, cover, cover;
           background-size: 3px, cover, cover;
@@ -116,24 +116,26 @@ section {
             justify-content: center;
     margin-left: 20px;
     width: 200px; }
-  .project-container a {
+  .project-container .project-container-img {
     max-width: 80%; }
-  .project-container img {
-    max-width: 100%;
-    -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-         -o-transform: scale(1);
-            transform: scale(1); }
-    .project-container img:hover {
-      -webkit-transition: -webkit-transform 0.3s;
-      transition: -webkit-transform 0.3s;
-      -o-transition: -o-transform 0.3s;
-      transition: transform 0.3s;
-      transition: transform 0.3s, -webkit-transform 0.3s, -o-transform 0.3s;
-      -webkit-transform: scale(1.05);
-          -ms-transform: scale(1.05);
-           -o-transform: scale(1.05);
-              transform: scale(1.05); }
+    .project-container .project-container-img a {
+      width: 100%; }
+    .project-container .project-container-img img {
+      max-width: 100%;
+      -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+           -o-transform: scale(1);
+              transform: scale(1); }
+      .project-container .project-container-img img:hover {
+        -webkit-transition: -webkit-transform 0.3s;
+        transition: -webkit-transform 0.3s;
+        -o-transition: -o-transform 0.3s;
+        transition: transform 0.3s;
+        transition: transform 0.3s, -webkit-transform 0.3s, -o-transform 0.3s;
+        -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+             -o-transform: scale(1.05);
+                transform: scale(1.05); }
   @media (max-width: 600px) {
     .project-container {
       -webkit-box-orient: vertical;
@@ -141,7 +143,7 @@ section {
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column; }
-      .project-container a {
+      .project-container .project-container-img {
         max-width: 100%; }
       .project-container .project-container-text {
         width: 100%;

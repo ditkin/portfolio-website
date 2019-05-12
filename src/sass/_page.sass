@@ -47,8 +47,10 @@ section
 
 #hero
   height: 100%
-  background: #83a4d4;
-  background-image: url(../assets/dot.svg), linear-gradient(to right, #b6fbff, #83a4d4);
+  //background: #83a4d4;
+  background: rgb(241,216,0);
+  //background-image: url(../assets/dot.svg), linear-gradient(to right, #b6fbff, #83a4d4);
+  background-image: url(../assets/dot.svg), linear-gradient(90deg, rgba(241,216,0,0.1110819327731093) 0%, rgba(174,185,23,1) 100%)
   background-position: center;
   background-size: 3px, cover, cover;
   flex-direction: column;
@@ -86,21 +88,24 @@ section
     margin-left: 20px;
     width: 200px
 
-  a
-    max-width: 80%
+  .project-container-img
+    max-width: 80%;
 
-  img
-    max-width: 100%
-    transform: scale(1);
+    a
+      width: 100%;
 
-    &:hover
-      transition: transform 0.3s;
-      transform: scale(1.05);
+    img
+      max-width: 100%
+      transform: scale(1);
+
+      &:hover
+        transition: transform 0.3s;
+        transform: scale(1.05);
 
   @media (max-width: 600px)
     flex-direction: column;
 
-    a
+    .project-container-img
       max-width: 100%;
 
     .project-container-text
