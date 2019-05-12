@@ -88,14 +88,64 @@ section {
 .push-below-header {
   margin-top: 100px; }
 
-#warrior-soul-pic {
-  height: 250px;
-  width: 400px; }
-  #warrior-soul-pic:hover {
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-         -o-transform: scale(1.2);
-            transform: scale(1.2); }
+.project-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .project-container .project-container-text {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 20px;
+    width: 200px; }
+  .project-container a {
+    max-width: 80%; }
+  .project-container img {
+    max-width: 100%;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+         -o-transform: scale(1);
+            transform: scale(1); }
+    .project-container img:hover {
+      -webkit-transition: -webkit-transform 0.3s;
+      transition: -webkit-transform 0.3s;
+      -o-transition: -o-transform 0.3s;
+      transition: transform 0.3s;
+      transition: transform 0.3s, -webkit-transform 0.3s, -o-transform 0.3s;
+      -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+           -o-transform: scale(1.05);
+              transform: scale(1.05); }
+  @media (max-width: 600px) {
+    .project-container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .project-container a {
+        max-width: 100%; }
+      .project-container .project-container-text {
+        width: 100%;
+        margin: 8px 0 0 0; } }
 
 @-webkit-keyframes spinner {
   from {
