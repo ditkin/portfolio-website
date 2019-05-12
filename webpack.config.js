@@ -12,7 +12,6 @@ module.exports = {
     filename: '[name].js',
   },
   target: 'node',
-  externals: [nodeExternals()],
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'main.css',
