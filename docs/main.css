@@ -52,6 +52,7 @@ section {
   color: inherit !important; }
 
 #hero {
+  height: 100%;
   background: #f1d800;
   background-image: url(d43bd3b3942ee0ef49e4a2edb2e17ea4.svg), -webkit-gradient(linear, left top, right top, from(rgba(241, 216, 0, 0.111082)), to(#aeb917));
   background-image: url(d43bd3b3942ee0ef49e4a2edb2e17ea4.svg), -webkit-linear-gradient(left, rgba(241, 216, 0, 0.111082) 0%, #aeb917 100%);
@@ -96,10 +97,10 @@ section {
   -webkit-flex-wrap: nowrap;
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 80px; }
   .project-container .project-container-text {
     display: -webkit-box;
