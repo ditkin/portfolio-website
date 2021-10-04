@@ -1,4 +1,5 @@
 import smoothscroll from 'smoothscroll-polyfill';
+import { getRoute, navigateToRoute, ROUTES } from './router';
 import './sass/main.sass';
 
 const isChrome = navigator.userAgent.indexOf('Chrome') > -1;
@@ -8,17 +9,21 @@ if (isSafari && !isChrome) {
   smoothscroll.polyfill();
 }
 
-const scrollToAbout = () =>
-  window.scrollTo({
-    top: 800,
-    left: 0,
-    behavior: 'smooth',
-  });
+ROUTES.forEach((route) => {
+  const button = document.querySelector(`#low-header .${route}`);
+  if (!button) return;
+  button.onclick = navigateToRoute(route);
+});
 
-document
-  .querySelector('#low-header .about')
-  .addEventListener('click', scrollToAbout);
-document.querySelector('#hero .about').addEventListener('click', scrollToAbout);
+ROUTES.forEach((route) => {
+  const button = document.querySelector(`#hero .${route}`);
+  if (!button) return;
+  button.onclick = navigateToRoute(route);
+});
+
+// navigate to current route
+const route = getRoute();
+navigateToRoute(route);
 
 var header = document.getElementById('low-header');
 window.addEventListener('scroll', () => {
